@@ -44,14 +44,165 @@
 
 
     <div class="schedule">
-<div class="schedule__week">
+        <p class="schedule__title">Расписание</p>
 
-</div>
-<p class="schedule__hall">Красный зал</p>
+        <ul class="schedule__week">
+            <li>
+                <button class="schedule__btn-week">Пн, 9 янв</button>
+            </li>
+            <li>
+                <button class="schedule__btn-week">Вт, 10 янв</button>
+            </li>
+            <li>
+                <button class="schedule__btn-week">Ср, 11 янв</button>
+            </li>
+            <li>
+                <button class="schedule__btn-week">Чт, 12 янв</button>
+            </li>
+            <li>
+                <button class="schedule__btn-week">Пт, 13 янв</button>
+            </li>
+            <li>
+                <button class="schedule__btn-week">Сб, 14 янв</button>
+            </li>
+            <li>
+                <button class="schedule__btn-week">Вс, 15 янв</button>
+            </li>
+        </ul>
 
-<p class="schedule__hall">Синий зал</p>
-<p class="schedule__hall">Фиолетовый зал</p>
-</div>
+        @@loop('blocks/sched-hall.html', [
+        {
+        "name": "Красный зал",
+        "time": ["11:40", "12:40", "13:40", "14:40", "16:40"]
+        },
+        {
+        "name": "Синий зал",
+        "time": ["9:40", "12:30", "18:40"]
+        },
+        {
+        "name": "Фиолетовый зал",
+        "time": ["11:40", "12:50", "15:40", "18:40"]
+        }]
+        )
+
+
+        <p class="schedule__place">Выбор места</p>
+
+        <div class="choice">
+            <div class="screen">
+                <p class="screen__name">Экран</p>
+                <hr class="screen__line">
+
+                <div class="screen__seat">
+                    <table>
+                        <caption></caption>
+                        <tr>
+                            <th class="screen__name">Ряд</th>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td> <button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td> <button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td> <button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td> <button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td> <button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td> <button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td> <button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td> <button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td> <button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td> <button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td> <button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td> <button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                            <td><button class="screen__btn"></button></td>
+                        </tr>
+
+
+
+                    </table>
+                </div>
+            </div>
+            <div class="choice__order">
+                <p class="choice__what">Зал</p>
+                <p class="choice__what-choice">Синий</p>
+                <p class="choice__what">Дата и время</p>
+                <p class="choice__what-choice">3 июля 13:45</p>
+                <p class="choice__what">Места</p>
+                <p class="choice__what-choice">2 ряд - 8, 9</p>
+
+                <p class="choice__sum">Сумма:</p>
+                <p class="choice__sum-result">500 ₽</p>
+                <button class="button">Купить</button>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
 
 
 
