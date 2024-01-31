@@ -1,0 +1,40 @@
+<article class="@@class">
+    <a href="#" class="poster-card__link">
+
+  
+        <img src="@@img" alt="@@alt" class="poster-card__img"/>
+        <p class="poster-card__description-img">@@descrImg</p>
+
+<div class="poster-card__info">
+
+    <div class="poster-card__stars">
+        @@for (var i=0; i < stars; i++ ){
+            <i class="fa-solid fa-star fa-star--1"></i> 
+
+        }
+        @@for (var i=0; i < 5 - stars; i++ ){
+            <i class="fa-solid fa-star fa-star--5"></i> 
+
+        }
+
+
+    </div>
+
+  
+      <h4 class="poster-card__title">@@title</h4>
+  
+      <p class="poster-card__description">@@descr</p>
+  
+      <time datetime="@@datetime" class="poster-card__time">@@time</time>
+    <button class="poster-card__btn">
+        <svg width="300" height = "56">
+            <use xlink:href="assets/icons/symbols.svg#Button"></use>
+          </svg>
+    </button>
+</div>
+
+    </a>
+
+
+
+</article>
