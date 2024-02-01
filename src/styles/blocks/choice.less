@@ -1,12 +1,16 @@
 .choice{
 display: flex;
 gap: 100px;
+margin-bottom: 100px;
+align-items: flex-end;
     &__what{
         font-family: @font1;
         color: @gray;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
+        margin: 2px;
+        margin-left: 0;
     }
 
     &__what-choice{
@@ -15,15 +19,21 @@ gap: 100px;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
+        margin: 0;
+        margin-bottom: 20px;
     }
 
-    &__sum,
-    &__sum-result{
+    &__sum{
         font-family: @font1;
         color: @black;
         font-weight: 600;
         font-size: 20px;
         line-height: 24px;
     }
+
+    &__order{
+        padding-bottom: 14px;
+    }
+
 
 }

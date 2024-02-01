@@ -77,60 +77,62 @@
 
   </div>
 
-
-
   <div class="schedule">
     <p class="schedule__title">Расписание</p>
+    <div class="schedule__week-back">
 
-    <ul class="schedule__week">
-      <li>
-        <button class="schedule__btn-week">Пн, 9 янв</button>
-      </li>
-      <li>
-        <button class="schedule__btn-week">Вт, 10 янв</button>
-      </li>
-      <li>
-        <button class="schedule__btn-week">Ср, 11 янв</button>
-      </li>
-      <li>
-        <button class="schedule__btn-week">Чт, 12 янв</button>
-      </li>
-      <li>
-        <button class="schedule__btn-week">Пт, 13 янв</button>
-      </li>
-      <li>
-        <button class="schedule__btn-week">Сб, 14 янв</button>
-      </li>
-      <li>
-        <button class="schedule__btn-week">Вс, 15 янв</button>
-      </li>
-    </ul>
+      <ul class="schedule__week">
+        <li class="schedule__week-li">
+          <button class="schedule__btn-week">Пн, 9 янв</button>
+        </li>
+        <li class="schedule__week-li">
+          <button class="schedule__btn-week">Вт, 10 янв</button>
+        </li>
+        <li class="schedule__week-li">
+          <button class="schedule__btn-week">Ср, 11 янв</button>
+        </li>
+        <li class="schedule__week-li">
+          <button class="schedule__btn-week">Чт, 12 янв</button>
+        </li>
+        <li class="schedule__week-li">
+          <button class="schedule__btn-week">Пт, 13 янв</button>
+        </li>
+        <li class="schedule__week-li">
+          <button class="schedule__btn-week">Сб, 14 янв</button>
+        </li>
+        <li class="schedule__week-li">
+          <button class="schedule__btn-week">Вс, 15 янв</button>
+        </li>
+      </ul>
+
+    </div>
+
 
     <p class="schedule__hall">Красный зал</p>
     <ul class="schedule__time">
 
 
-      <li>
+      <li class="schedule__li">
         <button class="schedule__btn-hall">11:40</button>
       </li>
 
 
-      <li>
+      <li class="schedule__li">
         <button class="schedule__btn-hall">12:40</button>
       </li>
 
 
-      <li>
+      <li class="schedule__li">
         <button class="schedule__btn-hall">13:40</button>
       </li>
 
 
-      <li>
+      <li class="schedule__li">
         <button class="schedule__btn-hall">14:40</button>
       </li>
 
 
-      <li>
+      <li class="schedule__li">
         <button class="schedule__btn-hall">16:40</button>
       </li>
 
@@ -140,17 +142,17 @@
     <ul class="schedule__time">
 
 
-      <li>
+      <li class="schedule__li">
         <button class="schedule__btn-hall">9:40</button>
       </li>
 
 
-      <li>
+      <li class="schedule__li">
         <button class="schedule__btn-hall">12:30</button>
       </li>
 
 
-      <li>
+      <li class="schedule__li">
         <button class="schedule__btn-hall">18:40</button>
       </li>
 
@@ -160,28 +162,27 @@
     <ul class="schedule__time">
 
 
-      <li>
+      <li class="schedule__li">
         <button class="schedule__btn-hall">11:40</button>
       </li>
 
 
-      <li>
+      <li class="schedule__li">
         <button class="schedule__btn-hall">12:50</button>
       </li>
 
 
-      <li>
+      <li class="schedule__li">
         <button class="schedule__btn-hall">15:40</button>
       </li>
 
 
-      <li>
+      <li class="schedule__li">
         <button class="schedule__btn-hall">18:40</button>
       </li>
 
 
     </ul>
-
 
     <p class="schedule__place">Выбор места</p>
 
@@ -191,14 +192,14 @@
         <hr class="screen__line">
 
         <div class="screen__seat">
-          <table>
+          <table class="screen__table">
             <caption></caption>
             <tr>
               <th class="screen__name">Ряд</th>
 
             </tr>
             <tr>
-              <td>1</td>
+              <td class="screen__td">1</td>
               <td>
                 <button class="screen__btn"></button>
               </td>
@@ -231,7 +232,7 @@
               </td>
             </tr>
             <tr>
-              <td>2</td>
+              <td class="screen__td">2</td>
               <td>
                 <button class="screen__btn"></button>
               </td>
@@ -264,7 +265,7 @@
               </td>
             </tr>
             <tr>
-              <td>3</td>
+              <td class="screen__td">3</td>
               <td>
                 <button class="screen__btn"></button>
               </td>
@@ -297,7 +298,7 @@
               </td>
             </tr>
             <tr>
-              <td>4</td>
+              <td class="screen__td">4</td>
               <td>
                 <button class="screen__btn"></button>
               </td>
@@ -330,7 +331,7 @@
               </td>
             </tr>
             <tr>
-              <td>5</td>
+              <td class="screen__td">5</td>
               <td>
                 <button class="screen__btn"></button>
               </td>
@@ -363,7 +364,7 @@
               </td>
             </tr>
             <tr>
-              <td>6</td>
+              <td class="screen__td">6</td>
               <td>
                 <button class="screen__btn"></button>
               </td>
@@ -395,8 +396,6 @@
                 <button class="screen__btn"></button>
               </td>
             </tr>
-
-
 
           </table>
         </div>
@@ -409,8 +408,8 @@
         <p class="choice__what">Места</p>
         <p class="choice__what-choice">2 ряд - 8, 9</p>
 
-        <p class="choice__sum">Сумма:</p>
-        <p class="choice__sum-result">500 ₽</p>
+        <p class="choice__sum">Сумма: 500 ₽</p>
+
         <button class="button">Купить</button>
 
 
@@ -425,7 +424,46 @@
 
 
 
+  <div class="pp">
+    <div class="pp__container">
+      <div class="pp__sticky-close">
+        <button type="button" class="pp__sticky-btn"></button>
+      </div>
+      <h3 class="pp__title">Введите ваши данные</h3>
 
+      <div class="form__list">
+        <label class="form__field">
+          <span class="field__label">
+            Имя*
+          </span>
+          <input type="text" class="field__input" placeholder="Имя" name="name" required />
+        </label>
+        <label class="form__field">
+          <span class="field__label">
+            Фамилия*
+          </span>
+          <input type="text" class="field__input" placeholder="Фамилия" name="last_name" required />
+        </label>
+        <label class="form__field">
+          <span class="field__label">
+            Отчество
+          </span>
+          <input type="text" class="field__input" placeholder="Отчество" name="surname" required />
+        </label>
+        <label class="form__field">
+          <span class="field__label">
+            Телефон*
+          </span>
+          <input type="tel" class="field__input" placeholder="+7 (___) ___ __ __" name="phone" required />
+        </label>
+
+      </div>
+
+      <button type="button" class="button">Продолжить</button>
+
+    </div>
+
+  </div>
 </body>
 
 </html>

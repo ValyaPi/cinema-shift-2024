@@ -108,14 +108,12 @@ body {
           flex-direction: column;
 }
 .poster-card__description-img {
-  bottom: 0;
   border-radius: 8px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-  z-index: 1;
   width: 200px;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -286,12 +284,17 @@ body {
   padding: 16px 32px;
   background-color: #9534D2;
   border: none;
+  cursor: pointer;
 }
 .choice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 100px;
+  margin-bottom: 100px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .choice__what {
   font-family: 'Inter', sans-serif;
@@ -299,6 +302,8 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+  margin: 2px;
+  margin-left: 0;
 }
 .choice__what-choice {
   font-family: 'Inter', sans-serif;
@@ -306,14 +311,18 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 20px;
 }
-.choice__sum,
-.choice__sum-result {
+.choice__sum {
   font-family: 'Inter', sans-serif;
   color: #141C24;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
+}
+.choice__order {
+  padding-bottom: 14px;
 }
 .schedule {
   -webkit-box-sizing: border-box;
@@ -330,16 +339,8 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-}
-.schedule__week {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  list-style-type: none;
+  margin-top: 50px;
+  margin-bottom: 35px;
 }
 .schedule__time {
   display: -webkit-box;
@@ -350,12 +351,77 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style-type: none;
+  padding: 0;
+  margin-bottom: 25px;
 }
 .schedule__btn-hall {
+  cursor: pointer;
   background-color: transparent;
   border-radius: 14px;
   padding: 10px 16px;
   border: 1px solid #CED2DA;
+  font-family: 'Inter', sans-serif;
+  color: #141C24;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.schedule__btn-hall:hover {
+  background-color: #97A1AF;
+  color: #FFFFFF;
+}
+.schedule__week {
+  padding: 0;
+  display: -webkit-box;
+  list-style-type: none;
+  padding: 0px;
+  padding-top: 12px;
+  padding-left: 2px;
+}
+.schedule__week-back {
+  margin-bottom: 30px;
+  background-color: #F5F5F8;
+  height: 44px;
+  width: 687px;
+  border-radius: 16px;
+}
+.schedule__li {
+  margin-right: 10px;
+}
+.schedule__li:last-child {
+  margin-right: 0;
+}
+.schedule__btn-week {
+  height: 20px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  color: #637083;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  padding: 0 15px;
+  background-color: transparent;
+  border-right: 1px solid #97A1AF;
+}
+.schedule__btn-week:hover {
+  border: none;
+  color: #141C24;
+}
+.schedule__week-li:last-child button {
+  border-right: none ;
+}
+.schedule__week-li:hover {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -10px;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 16px;
 }
 .screen__btn {
   background-color: #712D9C;
@@ -363,14 +429,57 @@ body {
   height: 16px;
   border-radius: 4px;
   border: none;
-  margin: 12px;
+  margin: 5px 8px;
+  padding: 0;
+  cursor: pointer;
 }
 .screen__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: 'Inter', sans-serif;
   color: #344051;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+}
+.screen__line {
+  height: 4px;
+  width: 409px;
+  background-color: #CED2DA;
+  border: none;
+  margin-bottom: 20px;
+  margin-right: 0;
+  margin-left: 0;
+}
+.screen__table {
+  width: 424px;
+  height: 280px;
+}
+.screen__td {
+  font-family: 'Inter', sans-serif;
+  color: #344051;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.screen td {
+  padding: 0;
+}
+.pp {
+  display: none;
+  width: 544px;
+  height: 640px;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 @font-face {
   font-family: 'Inter';
