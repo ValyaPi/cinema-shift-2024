@@ -2,7 +2,12 @@
         <clipPath id="a">
             <path fill="#fff" transform="translate(.5 .041)" d="M0 0h102v39.142H0z"/>
         </clipPath>
-    </defs><symbol id="exit" viewBox="0 0 25 25"><g fill="none">
+    </defs><symbol id="close" viewBox="0 0 512 512"><g style="enable-background:new 0 0 512 512">
+    <style>
+        .st1{fill:none;stroke:#000;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <path d="m268.064 256.75 138.593-138.593a8 8 0 1 0-11.314-11.313L256.75 245.436 118.157 106.843a8 8 0 0 0-11.313 0 7.998 7.998 0 0 0 0 11.313L245.436 256.75 106.843 395.343a7.999 7.999 0 0 0 0 11.314c1.562 1.562 3.609 2.343 5.657 2.343s4.095-.781 5.657-2.343L256.75 268.064l138.593 138.593c1.563 1.562 3.609 2.343 5.657 2.343s4.095-.781 5.657-2.343a8 8 0 0 0 0-11.314L268.064 256.75z" id="cross_copy"/>
+</g></symbol><symbol id="exit" viewBox="0 0 25 25"><g fill="none">
     <path d="M14.97 20.937a.675.675 0 0 0-.674-.675H5.324a.5.5 0 0 1-.5-.5v-14.3a.5.5 0 0 1 .5-.5h8.972a.675.675 0 1 0 0-1.35H5.5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8.796a.675.675 0 0 0 .675-.675Zm-1.575-8.685a.63.63 0 0 0 0 1.26h5.546l-2.171 2.215a.693.693 0 0 0 .99.97l3.054-3.115a1 1 0 0 0 0-1.4L17.76 9.067a.693.693 0 1 0-.99.97l2.171 2.215h-5.546Z" fill="#97A1AF"/>
 </g></symbol><symbol id="logo" viewBox="0 0 103 40"><g fill="none">
     <g clip-path="url(#a)" fill="#9534D2">

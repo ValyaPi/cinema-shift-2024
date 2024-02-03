@@ -1,34 +1,36 @@
 <div class="pp">
     <div class="pp__container">
-        <div class="pp__sticky-close">
-            <button type="button" class="pp__sticky-btn"></button>
-        </div>
+            <button type="button" class="pp__sticky-btn">
+                <svg width="24" height="24" class="pp__sticky">
+                    <use xlink:href="assets/icons/symbols.svg#close"></use>
+                </svg>
+            </button>
         <h3 class="pp__title">Введите ваши данные</h3>
 
-        <div class="form__list">
-            <label class="form__field">
-                <span class="field__label">
+        <div class="pp__list">
+            <label class="pp__field">
+                <span class="pp__label">
                     Имя*
                 </span>
-                <input type="text" class="field__input" placeholder="Имя" name="name" required />
+                <input type="text" class="pp__input" placeholder="Имя" name="name" required />
             </label>
-            <label class="form__field">
-                <span class="field__label">
+            <label class="pp__field">
+                <span class="pp__label">
                     Фамилия*
                 </span>
-                <input type="text" class="field__input" placeholder="Фамилия" name="last_name" required />
+                <input type="text" class="pp__input" placeholder="Фамилия" name="last_name" required />
             </label>
-            <label class="form__field">
-                <span class="field__label">
+            <label class="pp__field">
+                <span class="pp__label">
                     Отчество
                 </span>
-                <input type="text" class="field__input" placeholder="Отчество" name="surname" required />
+                <input type="text" class="pp__input" placeholder="Отчество" name="surname" required />
             </label>
-            <label class="form__field">
-                <span class="field__label">
+            <label class="pp__field">
+                <span class="pp__label">
                     Телефон*
                 </span>
-                <input type="tel" class="field__input" placeholder="+7 (___) ___ __ __" name="phone" required />
+                <input type="tel" class="pp__input" placeholder="+7 (___) ___ __ __" name="phone" required />
             </label>
 
         </div>
