@@ -88,6 +88,7 @@ body {
 }
 .poster-card__link {
   text-decoration: none;
+  margin-bottom: 20px;
 }
 .poster-card__img {
   height: 300px;
@@ -106,6 +107,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 30px;
 }
 .poster-card__description-img {
   border-radius: 8px;
@@ -196,6 +198,8 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .fa-star {
   color: #FFB219;
@@ -470,6 +474,7 @@ body {
   padding: 0;
 }
 .pp {
+  display: none;
   width: 544px;
   height: 640px;
   background-color: #FFFFFF;
@@ -480,6 +485,7 @@ body {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 20px;
+  z-index: 1;
 }
 .pp__container {
   padding: 70px;
