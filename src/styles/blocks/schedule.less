@@ -1,0 +1,105 @@
+.schedule {
+
+    .container;
+
+    &__title,
+    &__place {
+        font-family: @font1;
+        color: @black;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 50px;
+        margin-bottom: 35px;
+    }
+
+
+
+    &__time {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 25px;
+    }
+
+    &__btn-hall {
+        cursor: pointer;
+        background-color: transparent;
+        border-radius: 14px;
+        padding: 10px 16px;
+        border: 1px solid @gray_star;
+        font-family: @font1;
+        color:@black;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        &:hover{
+            background-color: @gray-blue;
+            color: @white;
+        }
+
+
+    }
+
+    &__week{
+        list-style-type: none;
+        padding: 0;
+        display: -webkit-box;
+        list-style-type: none;
+        padding: 0px;
+        padding-top: 12px;
+        padding-left: 2px;
+
+    }
+
+
+&__week-back{
+    margin-bottom: 30px;
+    background-color: @gray-back;
+    height: 44px;
+    width: 687px;
+    border-radius: 16px;
+
+}
+
+    &__li{
+        margin-right: 10px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__btn-week{
+        height: 20px;
+        cursor: pointer;
+        font-family: @font1;
+        color: @gray;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        border: none;
+        padding: 0 15px;
+        background-color: transparent;
+        border-right: 1px solid @grafit ;
+
+        &:hover{
+            border: none;
+            color: @black;
+        }
+    }
+
+    &__week-li{
+        &:last-child button{
+            border-right: none ;
+        }
+        &:hover { 
+            background-color: @white;
+            display: flex;
+            margin-top: -10px;
+            height: 40px;
+            align-items: center;
+            border-radius: 16px;
+        }
+    }
+}
